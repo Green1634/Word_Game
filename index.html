@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+
+#head {
+    font-weight: 800;
+        font-size: larger ;
+        font-stretch: expanded;
+        font-family: 'Grandstander', cursive;
+        margin-top: 2em;
+}
+
+body {
+    background-image: url(/Luck_game/ttt.jpg);
+    background-repeat: no-repeat;
+    opacity: 1;
+    font-size: large;
+    font-weight: bolder;
+    padding: 2em;
+    
+}
+
+ {
+    margin-bottom: em;
+}
+    </style>
+   
+</head>
+
+<body>
+    <div class="container white-text">
+    <h3 id="head" class="white-text center-align">Enter Your Name, and get Your Third Letter</h3>
+    <input id="name" placeholder="Your name" type="text"> <br/>
+<button onclick= "letter();"> Send </button>
+<input id="res" placeholder="Your answer" type="text" class="white-text"> <br/>
+</div>
+
+
+<div class="container" >
+<h2 id="head" class="white-text center-align"> Simple Letter Generator </h2>
+
+<button onclick="newQuote();" > New Quote</button>
+
+<input id="quoteDisplay" type="text" placeholder="Your random letter" class="white-text">
+
+
+<button onclick="final();" >Final Result</button> 
+<p id="reply" class="center-align red-text " id="head"> </p>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
